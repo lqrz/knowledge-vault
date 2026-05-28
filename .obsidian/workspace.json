@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "agent-sdk-overview"
+              "title": "README"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for agent-sdk-overview"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from agent-sdk-overview"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of agent-sdk-overview"
+              "title": "Outline of README"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "e766e98f4d1a66ac",
   "lastOpenFiles": [
+    "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
     "topics/anthropic/agent-sdk/wiki/overview/agent-loop.md",
     "topics/anthropic/agent-sdk/wiki/overview/agent-loop-tool-detection.svg",
     "topics/anthropic/agent-sdk/wiki/index.md",
@@ -196,7 +197,6 @@
     "topics/anthropic/agent-sdk/wiki/hooks/hooks.md",
     "topics/anthropic/agent-sdk/wiki/permissions/permissions.md",
     "topics/anthropic/agent-sdk/wiki/mcp/mcp.md",
-    "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
     "topics/anthropic/agent-sdk/raw/user-input/index.md",
     "topics/anthropic/agent-sdk/raw/tool-search/index.md",
     "topics/anthropic/agent-sdk/raw/subagents/index.md",
