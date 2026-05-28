@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430" role="img" aria-labelledby="title desc">
+  <title id="title">Sequence loss as sum of time-step losses</title>
+  <desc id="desc">Predictions at individual time steps produce per-step losses, which are summed into one sequence loss.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="430" fill="#ffffff"/>
+  <text x="36" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">Per-step losses form one sequence loss</text>
+  <text x="36" y="70" font-family="Arial, sans-serif" font-size="15" fill="#4b5563">Each prediction is compared with its target. The training objective is the sum or average over the time steps.</text>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="86" y="118" width="140" height="58" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="156" y="153" font-size="18" fill="#111827">yhat1, y1</text>
+    <rect x="326" y="118" width="140" height="58" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="396" y="153" font-size="18" fill="#111827">yhat2, y2</text>
+    <rect x="566" y="118" width="140" height="58" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="636" y="153" font-size="18" fill="#111827">yhat3, y3</text>
+    <rect x="806" y="118" width="140" height="58" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="876" y="153" font-size="18" fill="#111827">yhatT, yT</text>
+
+    <rect x="110" y="238" width="92" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="156" y="267" font-size="18" fill="#111827">L1</text>
+    <rect x="350" y="238" width="92" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="396" y="267" font-size="18" fill="#111827">L2</text>
+    <rect x="590" y="238" width="92" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="636" y="267" font-size="18" fill="#111827">L3</text>
+    <rect x="830" y="238" width="92" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="876" y="267" font-size="18" fill="#111827">LT</text>
+  </g>
+
+  <g stroke="#4b5563" stroke-width="2.4" fill="none" marker-end="url(#arrow)">
+    <path d="M156 178 L156 236"/>
+    <path d="M396 178 L396 236"/>
+    <path d="M636 178 L636 236"/>
+    <path d="M876 178 L876 236"/>
+    <path d="M202 262 C295 335 438 340 520 344"/>
+    <path d="M442 262 C480 320 502 335 520 344"/>
+    <path d="M590 262 C565 320 538 337 520 344"/>
+    <path d="M830 262 C722 350 590 354 520 344"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <circle cx="520" cy="344" r="28" fill="#f3f4f6" stroke="#111827" stroke-width="2"/>
+    <text x="520" y="352" font-size="24" fill="#111827">+</text>
+    <rect x="608" y="318" width="330" height="54" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+    <text x="773" y="351" font-size="20" fill="#111827">L = L1 + L2 + L3 + ... + LT</text>
+  </g>
+</svg>

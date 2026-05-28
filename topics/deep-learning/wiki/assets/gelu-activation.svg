@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+  <title id="title">GELU activation curve</title>
+  <desc id="desc">GELU smoothly gates inputs, allowing small negative output and nearly linear positive output.</desc>
+  <rect width="760" height="420" fill="#ffffff"/>
+  <line x1="80" y1="300" x2="690" y2="300" stroke="#111827" stroke-width="2"/>
+  <line x1="380" y1="340" x2="380" y2="60" stroke="#111827" stroke-width="2"/>
+  <line x1="100" y1="300" x2="660" y2="80" stroke="#9ca3af" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="696" y="306" font-family="Arial, sans-serif" font-size="18" fill="#111827">z</text>
+  <text x="392" y="74" font-family="Arial, sans-serif" font-size="18" fill="#111827">phi(z)</text>
+  <path d="M100 300 C175 306 255 325 323 315 C360 309 386 282 413 240 C480 150 560 100 660 78" fill="none" stroke="#db2777" stroke-width="6" stroke-linecap="round"/>
+  <text x="108" y="262" font-family="Arial, sans-serif" font-size="18" fill="#be185d">smooth negative gate</text>
+  <text x="470" y="132" font-family="Arial, sans-serif" font-size="18" fill="#be185d">approaches identity</text>
+  <text x="220" y="376" font-family="Arial, sans-serif" font-size="22" fill="#111827">GELU: z * Phi(z)</text>
+</svg>

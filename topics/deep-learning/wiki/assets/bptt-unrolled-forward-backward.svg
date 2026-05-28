@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="460" viewBox="0 0 1040 460" role="img" aria-labelledby="title desc">
+  <title id="title">Backpropagation through time unrolled graph</title>
+  <desc id="desc">An unrolled recurrent neural network with forward flow from left to right and backward gradient flow from right to left.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="460" fill="#ffffff"/>
+  <text x="36" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">Unrolled RNN: forward pass and BPTT</text>
+  <text x="36" y="72" font-family="Arial, sans-serif" font-size="15" fill="#4b5563">Forward computation moves left to right.</text>
+  <text x="36" y="94" font-family="Arial, sans-serif" font-size="15" fill="#4b5563">Gradients from the sequence loss move right to left through the same unrolled graph.</text>
+
+  <g font-family="Arial, sans-serif" font-size="18" text-anchor="middle">
+    <rect x="82" y="188" width="112" height="66" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="138" y="226" fill="#111827">a0</text>
+    <rect x="266" y="188" width="112" height="66" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="322" y="226" fill="#111827">a1</text>
+    <rect x="450" y="188" width="112" height="66" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="506" y="226" fill="#111827">a2</text>
+    <rect x="634" y="188" width="112" height="66" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="690" y="226" fill="#111827">a3</text>
+    <rect x="818" y="188" width="112" height="66" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="874" y="226" fill="#111827">aT</text>
+  </g>
+
+  <g stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrow-blue)">
+    <path d="M194 221 L264 221"/>
+    <path d="M378 221 L448 221"/>
+    <path d="M562 221 L632 221"/>
+    <path d="M746 221 L816 221"/>
+  </g>
+
+  <g stroke="#dc2626" stroke-width="3" fill="none" marker-end="url(#arrow-red)">
+    <path d="M818 266 C760 328 710 328 692 258"/>
+    <path d="M634 266 C576 328 526 328 508 258"/>
+    <path d="M450 266 C392 328 342 328 324 258"/>
+    <path d="M266 266 C208 328 158 328 140 258"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#374151">
+    <text x="322" y="132">x1</text>
+    <text x="506" y="132">x2</text>
+    <text x="690" y="132">x3</text>
+    <text x="874" y="132">xT</text>
+    <path d="M322 140 L322 186" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path d="M506 140 L506 186" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path d="M690 140 L690 186" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path d="M874 140 L874 186" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111827">
+    <text x="260" y="360">gradient from future steps</text>
+    <text x="650" y="382">BPTT moves backward through the time-unrolled states</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="15" fill="#111827">
+    <rect x="778" y="36" width="210" height="72" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+    <line x1="798" y1="60" x2="856" y2="60" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)"/>
+    <text x="872" y="65">forward</text>
+    <path d="M800 88 C820 74 836 74 856 88" stroke="#dc2626" stroke-width="3" fill="none" marker-end="url(#arrow-red)"/>
+    <text x="872" y="93">backward</text>
+  </g>
+</svg>

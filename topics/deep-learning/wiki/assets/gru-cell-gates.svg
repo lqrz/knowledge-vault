@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="560" viewBox="0 0 1120 560" role="img" aria-labelledby="title desc">
+  <title id="title">GRU cell with update and reset gates</title>
+  <desc id="desc">A gated recurrent unit computes reset and update gates, a candidate memory, and a new memory state.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="560" fill="#ffffff"/>
+  <text x="40" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">GRU cell: reset gate, update gate, and candidate memory</text>
+  <text x="40" y="74" font-family="Arial, sans-serif" font-size="15" fill="#4b5563">The reset gate controls how much old memory enters the candidate.</text>
+  <text x="40" y="96" font-family="Arial, sans-serif" font-size="15" fill="#4b5563">The update gate controls how much of the candidate replaces old memory.</text>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="70" y="210" width="150" height="70" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="145" y="238" font-size="18" fill="#111827">previous</text>
+    <text x="145" y="264" font-size="20" fill="#111827">c_prev</text>
+
+    <rect x="70" y="350" width="150" height="70" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="145" y="378" font-size="18" fill="#111827">input</text>
+    <text x="145" y="404" font-size="20" fill="#111827">x_t</text>
+
+    <rect x="330" y="132" width="170" height="68" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="415" y="158" font-size="18" fill="#111827">update gate</text>
+    <text x="415" y="184" font-size="20" fill="#111827">gamma_u</text>
+
+    <rect x="330" y="252" width="170" height="68" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="415" y="278" font-size="18" fill="#111827">reset gate</text>
+    <text x="415" y="304" font-size="20" fill="#111827">gamma_r</text>
+
+    <rect x="610" y="252" width="190" height="76" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="705" y="280" font-size="18" fill="#111827">candidate memory</text>
+    <text x="705" y="308" font-size="20" fill="#111827">c_candidate</text>
+
+    <rect x="890" y="210" width="170" height="76" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="975" y="238" font-size="18" fill="#111827">new memory</text>
+    <text x="975" y="266" font-size="20" fill="#111827">c_new = a_t</text>
+  </g>
+
+  <g stroke="#4b5563" stroke-width="2.4" fill="none" marker-end="url(#arrow)">
+    <path d="M220 232 C268 184 292 166 328 166"/>
+    <path d="M220 385 C272 280 294 166 328 166"/>
+    <path d="M220 250 C270 276 292 286 328 286"/>
+    <path d="M220 385 C272 338 294 300 328 292"/>
+    <path d="M500 286 L608 286"/>
+    <path d="M220 246 C380 350 500 330 608 306"/>
+    <path d="M220 385 C388 416 500 352 608 316"/>
+    <path d="M500 166 C690 122 814 154 890 222"/>
+    <path d="M800 290 L888 250"/>
+    <path d="M220 246 C510 112 742 134 888 232"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" fill="#111827">
+    <rect x="286" y="438" width="610" height="92" rx="10" fill="#f9fafb" stroke="#d1d5db"/>
+    <text x="310" y="466" font-size="16">gamma_u = sigmoid(W_u[c_prev, x_t] + b_u)</text>
+    <text x="310" y="491" font-size="16">gamma_r = sigmoid(W_r[c_prev, x_t] + b_r)</text>
+    <text x="310" y="516" font-size="16">c_candidate = tanh(W_c[gamma_r * c_prev, x_t] + b_c)</text>
+  </g>
+</svg>

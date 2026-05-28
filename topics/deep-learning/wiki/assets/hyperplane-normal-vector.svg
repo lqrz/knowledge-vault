@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+  <title id="title">Weight vector perpendicular to a hyperplane</title>
+  <desc id="desc">A plane with two points on it. The difference between the points lies in the plane, while the weight vector is perpendicular to that direction.</desc>
+  <defs>
+    <marker id="arrow-dark" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#111827" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#059669" />
+    </marker>
+  </defs>
+  <rect width="760" height="420" fill="#ffffff" />
+  <g transform="translate(95 70)">
+    <polygon points="120,230 460,160 620,250 270,325" fill="#f3f4f6" stroke="#6b7280" stroke-width="2" />
+    <text x="425" y="300" font-family="Arial, sans-serif" font-size="18" fill="#374151">hyperplane</text>
+    <text x="410" y="324" font-family="Arial, sans-serif" font-size="16" fill="#6b7280">w · x + b = 0</text>
+
+    <circle cx="250" cy="238" r="8" fill="#111827" />
+    <text x="225" y="222" font-family="Arial, sans-serif" font-size="17" fill="#111827">x1</text>
+
+    <circle cx="430" cy="204" r="8" fill="#111827" />
+    <text x="442" y="202" font-family="Arial, sans-serif" font-size="17" fill="#111827">x2</text>
+
+    <line x1="250" y1="238" x2="430" y2="204" stroke="#059669" stroke-width="4" marker-end="url(#arrow-green)" />
+    <text x="307" y="200" font-family="Arial, sans-serif" font-size="18" fill="#047857">x2 - x1</text>
+    <text x="300" y="178" font-family="Arial, sans-serif" font-size="15" fill="#047857">direction inside plane</text>
+
+    <line x1="340" y1="221" x2="340" y2="72" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow-blue)" />
+    <text x="356" y="112" font-family="Arial, sans-serif" font-size="22" fill="#2563eb">w</text>
+    <text x="356" y="137" font-family="Arial, sans-serif" font-size="15" fill="#2563eb">normal vector</text>
+
+    <path d="M340 221 L366 216 L366 190" fill="none" stroke="#111827" stroke-width="2" />
+    <text x="374" y="213" font-family="Arial, sans-serif" font-size="16" fill="#111827">90°</text>
+
+    <text x="80" y="20" font-family="Arial, sans-serif" font-size="20" fill="#111827">Why w is perpendicular</text>
+    <text x="80" y="50" font-family="Arial, sans-serif" font-size="16" fill="#4b5563">For any two points on the hyperplane, w · (x2 - x1) = 0.</text>
+    <text x="80" y="76" font-family="Arial, sans-serif" font-size="16" fill="#4b5563">So w is orthogonal to every direction that lies inside the hyperplane.</text>
+  </g>
+</svg>

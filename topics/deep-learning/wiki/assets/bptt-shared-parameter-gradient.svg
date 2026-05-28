@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="460" viewBox="0 0 1080 460" role="img" aria-labelledby="title desc">
+  <title id="title">Shared parameter gradient accumulation in BPTT</title>
+  <desc id="desc">Multiple uses of the same recurrent weight matrix contribute additive gradient terms to one shared parameter update.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1080" height="460" fill="#ffffff"/>
+  <text x="36" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">Shared recurrent weights get one accumulated gradient</text>
+  <text x="36" y="72" font-family="Arial, sans-serif" font-size="15" fill="#4b5563">The unrolled graph reuses the same Wa at each time step.</text>
+  <text x="36" y="94" font-family="Arial, sans-serif" font-size="15" fill="#4b5563">Backprop adds all contributions before the optimizer updates Wa once.</text>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="78" y="142" width="138" height="62" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="147" y="168" font-size="17" fill="#111827">same Wa</text>
+    <text x="147" y="190" font-size="17" fill="#111827">at t1</text>
+    <rect x="318" y="142" width="138" height="62" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="387" y="168" font-size="17" fill="#111827">same Wa</text>
+    <text x="387" y="190" font-size="17" fill="#111827">at t2</text>
+    <rect x="558" y="142" width="138" height="62" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="627" y="168" font-size="17" fill="#111827">same Wa</text>
+    <text x="627" y="190" font-size="17" fill="#111827">at t3</text>
+    <rect x="798" y="142" width="138" height="62" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="867" y="168" font-size="17" fill="#111827">same Wa</text>
+    <text x="867" y="190" font-size="17" fill="#111827">at tT</text>
+
+    <rect x="106" y="262" width="82" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="147" y="290" font-size="17" fill="#111827">g1</text>
+    <rect x="346" y="262" width="82" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="387" y="290" font-size="17" fill="#111827">g2</text>
+    <rect x="586" y="262" width="82" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="627" y="290" font-size="17" fill="#111827">g3</text>
+    <rect x="826" y="262" width="82" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="867" y="290" font-size="17" fill="#111827">gT</text>
+  </g>
+
+  <g stroke="#4b5563" stroke-width="2.3" fill="none" marker-end="url(#arrow)">
+    <path d="M147 206 L147 260"/>
+    <path d="M387 206 L387 260"/>
+    <path d="M627 206 L627 260"/>
+    <path d="M867 206 L867 260"/>
+    <path d="M188 284 C275 372 430 376 520 380"/>
+    <path d="M428 284 C470 352 500 372 520 380"/>
+    <path d="M586 284 C560 352 535 372 520 380"/>
+    <path d="M826 284 C710 390 600 394 520 380"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="492" y="350" width="310" height="60" rx="10" fill="#f3f4f6" stroke="#111827" stroke-width="2"/>
+    <text x="647" y="374" font-size="19" fill="#111827">grad Wa</text>
+    <text x="647" y="398" font-size="19" fill="#111827">= g1 + g2 + ... + gT</text>
+    <path d="M804 380 L870 380" stroke="#4b5563" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+    <rect x="872" y="350" width="158" height="60" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="951" y="374" font-size="18" fill="#111827">update</text>
+    <text x="951" y="397" font-size="18" fill="#111827">Wa once</text>
+  </g>
+</svg>

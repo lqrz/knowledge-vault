@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "c1599647415889eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "de865667ad953fef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e766e98f4d1a66ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "agent-sdk-overview"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a0a95554308e24e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b0ad2f1c0a5b570",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "238037ff6fa61423",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2f0393280b0aa2dd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "16848129a46cec6f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e0cebb804e337a90",
+    "type": "split",
+    "children": [
+      {
+        "id": "7be96e82607e94de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8ae8609ca231ba41",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for agent-sdk-overview"
+            }
+          },
+          {
+            "id": "f0718b417d5b5625",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from agent-sdk-overview"
+            }
+          },
+          {
+            "id": "25fc8676f17166a6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "aed4f610ecb6a4ee",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0c10fb0a220af416",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of agent-sdk-overview"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "e766e98f4d1a66ac",
+  "lastOpenFiles": [
+    "topics/anthropic/agent-sdk/wiki/overview/agent-loop.md",
+    "topics/anthropic/agent-sdk/wiki/overview/agent-loop-tool-detection.svg",
+    "topics/anthropic/agent-sdk/wiki/index.md",
+    "topics/anthropic/agent-sdk/wiki/custom-tools/tool-access-control.md",
+    "topics/anthropic/agent-sdk/wiki/user-input/user-input.md",
+    "topics/anthropic/agent-sdk/wiki/tool-search/tool-search.md",
+    "topics/anthropic/agent-sdk/wiki/subagents/subagents.md",
+    "topics/anthropic/agent-sdk/wiki/sessions/sessions.md",
+    "topics/anthropic/agent-sdk/wiki/hooks/hooks.md",
+    "topics/anthropic/agent-sdk/wiki/permissions/permissions.md",
+    "topics/anthropic/agent-sdk/wiki/mcp/mcp.md",
+    "topics/anthropic/agent-sdk/wiki/overview/agent-sdk-overview.md",
+    "topics/anthropic/agent-sdk/raw/user-input/index.md",
+    "topics/anthropic/agent-sdk/raw/tool-search/index.md",
+    "topics/anthropic/agent-sdk/raw/subagents/index.md",
+    "topics/anthropic/agent-sdk/raw/sessions/index.md",
+    "topics/anthropic/agent-sdk/raw/hooks/index.md",
+    "topics/anthropic/agent-sdk/raw/permissions/index.md",
+    "topics/anthropic/agent-sdk/raw/mcp/index.md",
+    "topics/anthropic/agent-sdk/raw/quickstart/index.md",
+    "topics/anthropic/agent-sdk/raw/overview/index.md",
+    "topics/anthropic/agent-sdk/wiki/user-input",
+    "topics/anthropic/agent-sdk/wiki/tool-search",
+    "topics/anthropic/agent-sdk/wiki/subagents",
+    "topics/anthropic/agent-sdk/wiki/sessions",
+    "topics/anthropic/agent-sdk/wiki/hooks",
+    "topics/anthropic/agent-sdk/wiki/permissions",
+    "topics/anthropic/agent-sdk/wiki/mcp",
+    "topics/anthropic/agent-sdk/wiki/overview",
+    "topics/anthropic/agent-sdk/raw/user-input",
+    "topics/anthropic/agent-sdk/raw/tool-search",
+    "topics/anthropic/agent-sdk/wiki/custom-tools/returning-content.md",
+    "topics/databricks/genai/rag/wiki/index.md",
+    "topics/anthropic/agent-sdk/wiki/custom-tools/error-handling.md",
+    "topics/anthropic/agent-sdk/wiki/custom-tools/defining-tools.md",
+    "topics/anthropic/agent-sdk/raw/custom-tools/index.md",
+    "topics/databricks/genai/rag/wiki/context-engineering.md",
+    "topics/deep-learning/raw/articles/distill/momentum/assets/thumbnail.jpg",
+    "topics/deep-learning/wiki/assets/colah-LSTM3-var-GRU-white.jpg",
+    "topics/deep-learning/wiki/assets/colah-LSTM3-var-tied-white.jpg",
+    "topics/deep-learning/wiki/assets/colah-LSTM3-var-peepholes-white.jpg",
+    "topics/deep-learning/wiki/assets/colah-LSTM3-focus-o-white.jpg",
+    "topics/deep-learning/wiki/assets/colah-LSTM3-focus-C-white.jpg",
+    "topics/deep-learning/wiki/assets/colah-LSTM3-focus-i-white.jpg",
+    "topics/deep-learning/wiki/assets/colah-LSTM3-focus-f-white.jpg",
+    "topics/deep-learning/wiki/assets/colah-LSTM3-gate-white.jpg",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}
